@@ -15,8 +15,7 @@ framework built atop the [[http://circuitsframework.com|circuits]] library.
 ** Also supports REST method dispatching at the same time.
 * XMLRPC, JSONRPC, Static, VirtualHosts and WebSockets dispatchers.
 
-circuits.web is as easy as:
-<<code lang=python linenos=True title=Web Server>>
+<<code lang=python linenos=True title=circuits.web is as easy as>>
 from circuits.web import Server, Controller, Logger
 
 class Root(Controller):
