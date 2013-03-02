@@ -1,0 +1,32 @@
+= circuits.web =
+
+Lightweight Asynchronous Web Application Framework.
+
+circuits.web is an asynchronous high performance, scalable web application
+framework built atop the [[http://circuitsframework.com|circuits]] library.
+
+== Features ==
+
+* HTTP 1.1 complient server
+* UNIX and TCP servers
+* WSGI 1.0 complient server
+* Compression, Cookies, Forms, Caching, etc
+* URL -> Channel/Event mapping (*similiar to CherryPy's URL -> Object Tree*)
+** Also supports REST method dispatching at the same time.
+* XMLRPC, JSONRPC, Static, VirtualHosts and WebSockets dispatchers.
+
+circuits.web is as easy as:
+<<code lang=python linenos=True title=Web Server>>
+from circuits.web import Server, Controller, Logger
+
+class Root(Controller):
+
+    def index(self):
+        return "Hello World!"
+
+(Server(("0.0.0.0", 8000)) + Root() + Logger()).run()
+<</code>>
+
+For more informatiom please visit the
+[[http://circuitsframework.com|circuits]] website. circuits.web is currently
+a part of the circuits application framework.
