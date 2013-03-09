@@ -27,5 +27,4 @@ class Root(Controller):
 <</code>>
 
 For more informatiom please visit the
-[[http://circuitsframework.com|circuits]] website. circuits.web is currently
-a part of the circuits application framework.
+[[http://circuitsframework.com|circuits]] website.
